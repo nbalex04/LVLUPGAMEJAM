@@ -8,6 +8,17 @@ TagManager:
   - RedFish
   - GreenFish
   - BlueFish
+  - RBlueFish
+  - RBeeFish
+  - ROverkitchFish
+  - RYellowFish
+  - RRedFish
+  - RGreenFish
+  - TRBlueFish
+  - TRYellowFish
+  - TROrangeFish
+  - TRPinkFish
+  - FinalFish
   layers:
   - Default
   - TransparentFX

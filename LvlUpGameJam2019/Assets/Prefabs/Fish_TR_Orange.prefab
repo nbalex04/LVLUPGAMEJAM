@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 61165710987268680}
   m_Layer: 9
   m_Name: Fish_TR_Orange
-  m_TagString: BlueFish
+  m_TagString: TROrangeFish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 61504041620636856}
   m_Layer: 9
   m_Name: Fish_R_red
-  m_TagString: BlueFish
+  m_TagString: RRedFish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
