@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour
+{
 
     public float bouncingLimitLowHigh = 5f;
     public float bouncingHigh = 2f;
@@ -17,6 +18,14 @@ public class PlayerMovement : MonoBehaviour {
         rb2d = GetComponent<Rigidbody2D>();
     }
 
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Fish")
+        {
+            Physics.IgnoreCollision(theobjectToIgnore.collider, collider);
+        }
+    }
+
     void FixedUpdate()
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
@@ -27,7 +36,8 @@ public class PlayerMovement : MonoBehaviour {
         if (rb2d.velocity.x <= -velocityMax)
         {
             if (moveHorizontal < 0) moveHorizontal = 0;
-        } else if (rb2d.velocity.x >= velocityMax)
+        }
+        else if (rb2d.velocity.x >= velocityMax)
         {
             if (moveHorizontal > 0) moveHorizontal = 0;
         }
@@ -36,7 +46,8 @@ public class PlayerMovement : MonoBehaviour {
         {
             rb2d.velocity = new Vector2(rb2d.velocity.x, -velocityMax);
             if (moveVertical < 0) moveVertical = 0;
-        } else if (rb2d.velocity.y >= velocityMax)
+        }
+        else if (rb2d.velocity.y >= velocityMax)
         {
             moveVertical = 0;
         }
@@ -57,15 +68,14 @@ public class PlayerMovement : MonoBehaviour {
             isBouncing = false;
         }
 
-        Vector2 movement = new Vector2(moveHorizontal * speed/4, moveVertical * speed);
+        Vector2 movement = new Vector2(moveHorizontal * speed / 4, moveVertical * speed);
 
         rb2d.AddForce(movement);
 
-        if ((moveHorizontal > 0 && !isFacingRight) || (moveHorizontal < 0 && isFacingRight)) {
+        if ((moveHorizontal > 0 && !isFacingRight) || (moveHorizontal < 0 && isFacingRight))
+        {
             Flip();
         }
-
-        Debug.Log(rb2d.velocity);
     }
 
     private void Flip()
