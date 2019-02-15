@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Shop : MonoBehaviour {
+public class Shop : MonoBehaviour
+{
 
     public Canvas shopCanvas;
     public Inventary inventary;
@@ -18,12 +17,13 @@ public class Shop : MonoBehaviour {
     int[] nbFishInventary;
 
     private bool isOpen = false;
+    public Collider2D playerCol;
 
-    void OnCollisionEnter2D(Collision2D col)
+    void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Player")
         {
-            if(isOpen)
+            if (isOpen)
             {
                 // display canvas
                 shopCanvas.enabled = false;
@@ -34,19 +34,19 @@ public class Shop : MonoBehaviour {
                 // initialisation des affichages
             }
 
-            Debug.Log("NICE");
+            Debug.Log("ENTER IN SHOP");
         }
     }
 
     void sell()
     {
         double Sum = 0d;
-        for(int i = 0; i < 4; i++)
+        for (int i = 0; i < 4; i++)
         {
             Sum += prices[i] * nbFishInventary[i];
         }
         // Add money to the user
-        
+
     }
 
 }
