@@ -1138,9 +1138,26 @@ MonoBehaviour:
   fish_red: {fileID: 1917056283861284, guid: 16b9d136f3481454f8a9bfeaf1f834b2, type: 2}
   fish_yellow: {fileID: 1174502658419906, guid: e614be116b271144d95f9f49bee1a3e3,
     type: 2}
-  firstStep: 30
-  secondStep: 60
-  thirdStep: 90
+  fish_r_bee: {fileID: 1090950005232488, guid: 7b5502c1a7288744aa2d83557f580438, type: 2}
+  fish_r_blue: {fileID: 1431769515438794, guid: 383a0653871094941b54c96b08bf9670,
+    type: 2}
+  fish_r_overkitch: {fileID: 1329085715073770, guid: 50f5ab70fd5fcac4c84e8ce7a6a772d0,
+    type: 2}
+  fish_r_yellow: {fileID: 1374063993513734, guid: 5f9fe94126836404393e017674570a82,
+    type: 2}
+  fish_r_red: {fileID: 1150508275118850, guid: 95afb0c65ad340d47b7232fe48480a44, type: 2}
+  fish_r_green: {fileID: 1007299249566470, guid: 4d51cc13ec56ad04984197f9f8b90406,
+    type: 2}
+  fish_tr_blue: {fileID: 1732641465641904, guid: a188cd7c254b2a04582951e47c4acdbf,
+    type: 2}
+  fish_tr_yellow: {fileID: 1225667395743578, guid: dc94d048e4025e0438f0086e10ffa733,
+    type: 2}
+  fish_tr_orange: {fileID: 1145742228975796, guid: 98cf8a6242891b04b927533bd97707b6,
+    type: 2}
+  fish_tr_pink: {fileID: 1646247519248894, guid: 32543b777c6a2144a8e5b2886d362f9c,
+    type: 2}
+  fish_final: {fileID: 1688444442305832, guid: cc5e83b43164d4f48a6da74d16e0961f, type: 2}
+  spawn_zone_width: 50
 --- !u!4 &784038885
 Transform:
   m_ObjectHideFlags: 0
@@ -2733,6 +2750,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50310641cb15abf48be9dee604a6159f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shopCanvas: {fileID: 0}
+  inventary: {fileID: 0}
+  greenFishPrice: 0
+  blueFishPrice: 0
+  redFishPrice: 0
+  yellowFishPrice: 0
   playerCol: {fileID: 983797634}
 --- !u!1 &1322301946
 GameObject:
