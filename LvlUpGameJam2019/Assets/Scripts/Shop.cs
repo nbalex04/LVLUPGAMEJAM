@@ -1,14 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Shop : MonoBehaviour {
 
-    void OnCollisionEnter2D(Collision2D col)
+    public Collider2D playerCol;
+
+    void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Player")
         {
-            Debug.Log("NICE");
+            Debug.Log("ENTER IN SHOP");
         }
     }
 }
