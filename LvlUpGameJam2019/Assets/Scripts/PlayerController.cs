@@ -24,10 +24,6 @@ public class PlayerController : MonoBehaviour
         {
             weaponAnimator.SetBool("DoAction", true);
         }
-        else if (Input.GetButtonUp("Jump"))
-        {
-            weaponAnimator.SetBool("DoAction", false);
-        }
 
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
