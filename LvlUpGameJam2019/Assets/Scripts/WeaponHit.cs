@@ -9,19 +9,22 @@ public class WeaponHit : MonoBehaviour {
         if (col.gameObject.tag == "BlueFish")
         {
             inventary.nbBlueFish++;
+            Destroy(col.gameObject);
         }
         else if (col.gameObject.tag == "GreenFish")
         {
             inventary.nbGreenFish++;
+            Destroy(col.gameObject);
         }
         else if (col.gameObject.tag == "RedFish")
         {
             inventary.nbRedFish++;
+            Destroy(col.gameObject);
         }
         else if (col.gameObject.tag == "YellowFish")
         {
             inventary.nbYellowFish++;
+            Destroy(col.gameObject);
         }
-        Destroy(col.gameObject);
     }
 }
