@@ -4,7 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Fish
+  - YellowFish
+  - RedFish
+  - GreenFish
+  - BlueFish
   layers:
   - Default
   - TransparentFX
@@ -17,7 +20,7 @@ TagManager:
   - Player
   - Fish
   - WallGround
-  - 
+  - Weapon
   - 
   - 
   - 
