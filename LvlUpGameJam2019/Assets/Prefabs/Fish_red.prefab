@@ -101,8 +101,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onTurnVelocity: 3
   speed: 3
-  top_limit: 0
-  bottom_limit: 0
+  top_limit: -15
+  bottom_limit: -50
 --- !u!212 &212754623186273066
 SpriteRenderer:
   m_ObjectHideFlags: 1
