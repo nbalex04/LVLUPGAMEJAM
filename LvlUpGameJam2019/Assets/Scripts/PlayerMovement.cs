@@ -18,14 +18,6 @@ public class PlayerMovement : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
     }
 
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Fish")
-        {
-            Physics.IgnoreCollision(theobjectToIgnore.collider, collider);
-        }
-    }
-
     void FixedUpdate()
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
